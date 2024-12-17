@@ -1,0 +1,32 @@
+Step 1: Enable Google Sheets API
+Go to the Google Cloud Console.
+Create a new project or select an existing one.
+Navigate to APIs & Services > Library.
+Search for Google Sheets API and enable it.
+Go to APIs & Services > Credentials:
+Click on Create Credentials and select Service Account.
+Fill in the details and create the service account.
+Generate a JSON Key file for the service account:
+After creating the service account, click on it.
+Go to the Keys tab and create a new key (JSON format).
+Download the JSON file to your computer.
+
+
+Step 2: Share Your Google Sheet with the Service Account
+Create a new Google Sheet (or use an existing one).
+Copy the Sheet ID from the URL. For example:
+bash
+Copy code
+https://docs.google.com/spreadsheets/d/<sheet-id>/edit#gid=0
+Share the Google Sheet with the service account's email address (found in the JSON key file).
+
+Step 3: Install Required Python Libraries
+install requirements.txt file 
+use command 
+pip install -r requirements.txt
+
+Step 3: Run your code 
+use command
+python main.py
+in linux 
+python3 main.py
